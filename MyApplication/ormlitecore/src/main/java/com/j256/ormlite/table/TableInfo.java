@@ -255,6 +255,6 @@ public class TableInfo<T, ID> {
  		 * capital version of many letters is a letter that is incompatible with many SQL libraries. For example, in
  		 * Turkish (Locale.forLanguageTag("tr-TR")), "i".toUpperCase() returns "İ" which is a dotted uppercase i.
  		 */
-		return columnName.toUpperCase(Locale.ENGLISH);
+		return columnName.toLowerCase(Locale.ENGLISH);
 	}
 }
